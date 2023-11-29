@@ -1,5 +1,6 @@
-{% load static %}
+
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 <title>About us</title>
@@ -27,17 +28,17 @@
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-							<div class="logo"><a href="index.html">boutique</a></div>
+							<div class="logo"><a href="/">TRAVEL</a></div>
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
-									<li><a href="index.html">Home</a></li>
+									<li><a href="/">Home</a></li>
 									<li class="active"><a href="about.html">About us</a></li>
 									{% if user.is_autheticated %}
 									<li> Hello {{user.username}}</li>
-									<li> <a href="codeapp/logout">logout</a> </li>
+									<li> <a href="codeapp/logout">logout</a></li>
 									{% else %}
-									<li><a href="codeapp/Register">Register</a></li>
-									<li><a href="code/app/login">login</a></li>
+									<li><a href="codeapp/register">Register</a></li>
+									<li><a href="codeapp/login">login</a></li>
 									{% endif %}
 
 
@@ -72,7 +73,7 @@
 
 	<div class="menu">
 		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-			<div class="menu_logo"><a href="index.html">boutique</a></div>
+			<div class="menu_logo"><a href="index.html">TRAVEL</a></div>
 			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
 		</div>
 		<div class="menu_content">
